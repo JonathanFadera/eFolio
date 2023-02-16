@@ -90,8 +90,6 @@
   .bottomNav a:hover {
     -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
-    /* border-radius: 50px; */
-    /* padding: 7px; */
     background-color: var(--BOTTOM-LINK-HOVER);
   }
   /* Main container as grid makes two columns*/
