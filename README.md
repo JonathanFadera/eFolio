@@ -13,7 +13,7 @@ With these points in mind, I am setting myself up for future success by applying
 
 ## Usage
 
-![alt text](assets/images/Screenshot.png)
+![alt text](assets/images/Screenshot-new.png)
 
 ## Credits
 

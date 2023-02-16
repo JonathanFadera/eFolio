@@ -79,14 +79,14 @@
     border-bottom: 4px solid var(--NAV--LINK-BORDER-BOTTOM);
   }
   
-  /* change the color and shadow on hover for topNav */
+  /* changed the color and shadow on hover for topNav */
   .topNav a:hover {
     -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
     background-color: var(--NAV--LINK-HOVER);
   }
   
-  /* change the color and shadow on hover for bottomNav   */
+  /* changed the color and shadow on hover for bottomNav   */
   .bottomNav a:hover {
     -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
@@ -94,7 +94,6 @@
     /* padding: 7px; */
     background-color: var(--BOTTOM-LINK-HOVER);
   }
-  
   /* Main container as grid makes two columns*/
   .container {
     width: 90%;
@@ -164,7 +163,6 @@
   }
   
   #portfolio img {
-    /* border: 5px solid var(--IMAGE-BORDER); */
     object-fit: cover;
     width: 100%;
     filter: sepia(100%);
@@ -201,12 +199,10 @@
     padding: 5px;
   }
   
-  /* Media Queries */
-  
+/* Media Queries */
+
   @media screen and (max-width: 900px) {
-    body {
-      background-color: var(--BODY-BGCOLOR);
-    }
+    body 
   
     header {
       background-color: var(--HEADER-BGCOLOR);
@@ -223,24 +219,21 @@
       padding: 0;
       text-align: center;
     }
-
     header nav {
       padding-right: 0;
     }
-
     nav {
       width: 100%;
       display: flex;
       justify-content: space-between;
     }
-
     .topNav {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
     }
-
+  
     .topNav a {
       color: var(--NAV--LINK-COLOR);
       font-size: 18px;
@@ -251,7 +244,7 @@
     }
   
     .container {
-      width: 100%;
+      width: 95%;
       display: grid;
       grid-template-columns: 100%;
     }
@@ -269,10 +262,17 @@
         "p4";
     }
     .page-section {
-      border-right: none;
+      border-right: 0;
       border-bottom: 4px solid var(--SECTION-BORDER);
     }
-    
+    h2 {
+      text-align: center;
+    }
+  
+    #portfolio img {
+      height: 190px;
+    }
+  
     ul.bottomNav {
       padding: 0px;
       flex-direction: column;
