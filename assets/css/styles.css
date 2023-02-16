@@ -2,44 +2,33 @@
 :root {
     /* COLORS - Light theme*/
     /* TODO Dark theme */
-    --test-blue: rgb(0, 0, 0);
+
+    --HEADER-BGCOLOR: #1A120B;
+    --HEADER-H1-BGCOLOR: #F8ECD1;
+    --HEADER-H1-LINK-COLOR: #F8ECD1;
   
-    --HEADER-BGCOLOR: #31343d;
-    --HEADER-H1-BGCOLOR: #92cccd;
-    --HEADER-H1-LINK-COLOR: #31343d;
+    --NAV--LINK-COLOR: #F8ECD1;
+    --NAV--LINK-BORDER-BOTTOM: #F8ECD1;
+    --NAV--LINK-HOVER: #A27B5C;
   
-    --NAV--LINK-COLOR: #92cccd;
-    --NAV--LINK-BORDER-BOTTOM: #92cccd;
-    --NAV--LINK-HOVER: rgba(255, 255, 255, 0.25);
-  
-    --HERO-H2-BGCOLOR: #92cccd;
+    --HERO-H2-BGCOLOR: #F8ECD1;
     --HERO-H2-COLOR: #31343d;
-  
-    --SECTION-H2-COLOR: #445876;
-    --SECTION-BORDER: #445876;
+
+    --SECTION-H2-COLOR: #3c2a21;
+    --SECTION-BORDER: #A27B5C;
   
     --PORTFOLIO-LINK-COLOR: #31343d;
-    --IMAGE-BORDER: #92cccd;
-    --FIGURE-CAPTION: #92cccd;
+    --IMAGE-BORDER: #F8ECD1;
+    --FIGURE-CAPTION: #F8ECD1;
   
-    --BOTTOM-LINK-COLOR: #445876;
-    --BOTTOM-LINK-HOVER: #92cccd;
+    --BOTTOM-LINK-COLOR: #3c2a21;
+    --BOTTOM-LINK-HOVER: #F8ECD1;
   
     /* FONTS */
-    --BODY-FONT-FAMILY: ""
+    --BODY-FONT-FAMILY: arial, sans-serif;
   }
-  
-  * {
-    /* FOR TESTING TO SEE THE BOXES */
-    /* outline: 1px solid red; */
-    /* border: 1px solid green; */
-  }
-  
+
   html {
-    /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
-    /* TODO this on next version */
-    /* font-size: 62.5%; */
-  
     /* sets the behavior for a scrolling box when scrolling is triggered by the navigation */
     scroll-behavior: smooth;
     height: auto;
@@ -50,7 +39,7 @@
     line-height: 1.5;
   }
   
-  /* Create header with flexbox */
+  /* Use Flexbox to create a header */
   header {
     background-color: var(--HEADER-BGCOLOR);
     display: flex;
@@ -62,7 +51,7 @@
   
   header h1 {
     background-color: var(--HEADER-H1-BGCOLOR);
-    font-size: 55px;
+    font-size: 30px;
     line-height: normal;
     padding: 0 15px 0 5%;
   }
@@ -86,7 +75,7 @@
   
   .topNav a {
     color: var(--NAV--LINK-COLOR);
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
     padding: 5px 10px;
     border-bottom: 4px solid var(--NAV--LINK-BORDER-BOTTOM);
@@ -109,17 +98,6 @@
   }
   
   /* Hero */
-  .hero-banner {
-    background-image: ("./images/02-hero-bg.jpg");
-    background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 195px;
-    /* other background */
-    /* background-image: url("../images/Screenshot.png"); */
-    position: relative;
-  }
-  
   .hero-banner h2 {
     background-color: var(--HERO-H2-BGCOLOR);
     color: var(--HERO-H2-COLOR);
@@ -150,12 +128,6 @@
     padding-right: 15px;
   }
   
-  h2 {
-    color: var(--SECTION-H2-COLOR);
-    text-align: end;
-    font-size: clamp(2rem, 3vw, 3rem);
-    font-weight: 900;
-  }
   .profile {
     width: 20%;
     margin: 0 2% 1% 0;
@@ -169,7 +141,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 410px 210px 210px;
+    grid-template-rows: 410px 300px 300px;
     grid-template-areas:
       "p0 p0"
       "p1 p2"
@@ -235,7 +207,6 @@
   
   ul.bottomNav {
     /* height: 200px; */
-    /* min-height: calc(100vh - 20rem); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -256,8 +227,7 @@
   
   @media screen and (max-width: 900px) {
     body {
-      /* background-color: green;
-      background-image: radial-gradient(whitesmoke, green) */
+     
     }
   
     header {
@@ -325,9 +295,7 @@
     .page-section {
       border-right: 0;
       border-bottom: 4px solid var(--SECTION-BORDER);
-      /* font-size: 40px; */
-      /* text-align: end; */
-      /* padding-right: 15px; */
+    
     }
     h2 {
       text-align: center;
