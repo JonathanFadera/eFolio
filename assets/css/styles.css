@@ -132,7 +132,7 @@
     width: 20%;
     margin: 0 2% 1% 0;
     border: 5px solid var(--IMAGE-BORDER);
-    float: left;
+    float: right;
   
   }
   
@@ -183,7 +183,7 @@
     width: 100%;
     filter: sepia(30%);
     /* filter: grayscale(50%); */
-    opacity: 70%;
+    opacity: 20%;
   }
   
   #portfolio img:hover,
