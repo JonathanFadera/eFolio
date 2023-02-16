@@ -17,6 +17,8 @@ With these points in mind, I am setting myself up for future success by applying
 
 ## Credits
 
+https://docs.emmet.io/cheat-sheet/
+
 https://github.com/apyosi
 
 https://ucb.bootcampcontent.com/UCB-Coding-Bootcamp/UCB-VIRT-FSF-PT-01-2023-U-LOLC/-/tree/main/Week_02-Advanced-CSS/01-Activities
@@ -24,3 +26,5 @@ https://ucb.bootcampcontent.com/UCB-Coding-Bootcamp/UCB-VIRT-FSF-PT-01-2023-U-LO
 https://www.w3schools.com/howto/howto_css_clearfix.asp
 
 https://flexboxfroggy.com/
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption

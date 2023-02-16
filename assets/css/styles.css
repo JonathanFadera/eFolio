@@ -1,12 +1,9 @@
 /* || VARIABLES */
 :root {
-    /* COLORS - Light theme*/
-    /* TODO Dark theme */
-
+    /* COLORS - Coffeehouse theme*/
     --HEADER-BGCOLOR: #1A120B;
-    --HEADER-H1-BGCOLOR: #F8ECD1;
-    --HEADER-H1-LINK-COLOR: #F8ECD1;
-  
+    --HEADER-H1-BGCOLOR: #A27B5C;
+
     --NAV--LINK-COLOR: #F8ECD1;
     --NAV--LINK-BORDER-BOTTOM: #F8ECD1;
     --NAV--LINK-HOVER: #A27B5C;
@@ -22,7 +19,7 @@
     --FIGURE-CAPTION: #F8ECD1;
   
     --BOTTOM-LINK-COLOR: #1A120B;
-    --BOTTOM-LINK-HOVER: #F8ECD1;
+    --BOTTOM-LINK-HOVER: #F8ECD1; 
   
     /* FONTS */
     --BODY-FONT-FAMILY: arial, sans-serif;
@@ -36,7 +33,7 @@
   
   body {
     font-family: var(--BODY-FONT-FAMILY);
-    line-height: 1.5;
+    line-height: 1.4;
   }
   
   /* Use Flexbox to create a header */
@@ -58,7 +55,8 @@
   
   header h1 a {
     text-decoration: none;
-    color: #31343d;
+    color: #1A120B;
+  
   }
   header nav {
     padding-right: 5%;
@@ -70,7 +68,7 @@
   }
   
   .topNav li {
-    padding: 5px;
+    padding: 10px;
   }
   
   .topNav a {
@@ -97,42 +95,30 @@
     background-color: var(--BOTTOM-LINK-HOVER);
   }
   
-  /* Hero */
-  .hero-banner h2 {
-    background-color: var(--HERO-H2-BGCOLOR);
-    color: var(--HERO-H2-COLOR);
-    font-size: 35px;
-    padding: 0 10px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-    right: 5%;
-  }
-  
   /* Main container as grid makes two columns*/
   .container {
-    width: 92%;
+    width: 90%;
     padding-bottom: 120px;
-    margin: 40px auto 0px auto;
+    margin: 100px auto 100px auto;
     display: grid;
-    grid-template-columns: 16% 76%;
+    grid-template-columns: 15% 75%;
     gap: 4%;
   }
   
   .page-section {
     border-right: 4px solid var(--SECTION-BORDER);
-    font-size: 40px;
-    text-align: end;
-    padding-right: 15px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
   }
   
   .profile {
-    width: 20%;
-    margin: 0 2% 1% 0;
+    width: 10%;
     border: 5px solid var(--IMAGE-BORDER);
     float: right;
+    margin: 0 0 0 10px;
   
   }
   
@@ -141,7 +127,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 410px 300px 300px;
+    grid-template-rows: 300 300px 300px;
     grid-template-areas:
       "p0 p0"
       "p1 p2"
@@ -181,33 +167,29 @@
     /* border: 5px solid var(--IMAGE-BORDER); */
     object-fit: cover;
     width: 100%;
-    filter: sepia(30%);
-    /* filter: grayscale(50%); */
+    filter: sepia(100%);
     opacity: 20%;
   }
   
   #portfolio img:hover,
   #portfolio figure:hover {
     filter: sepia(0%);
-    /* filter: grayscale(0%); */
-    opacity: 100%;
-    transition: 500ms;
+    opacity: 200%;
+    transition: 1ms;
   }
   
   figcaption {
     background-color: var(--FIGURE-CAPTION);
     padding: 10px;
     position: absolute;
-    bottom: 30px;
+    bottom: 5%;
   }
   
   ul.bottomNav {
-    /* height: 200px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
-    /* margin-top: 50px; */
     padding: 30px;
   }
   
@@ -223,7 +205,7 @@
   
   @media screen and (max-width: 900px) {
     body {
-     
+      background-color: var(--BODY-BGCOLOR);
     }
   
     header {
@@ -241,23 +223,24 @@
       padding: 0;
       text-align: center;
     }
+
     header nav {
       padding-right: 0;
     }
+
     nav {
-      /* display: block; */
       width: 100%;
-      /* margin: 0 auto; */
       display: flex;
       justify-content: space-between;
     }
+
     .topNav {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
     }
-  
+
     .topNav a {
       color: var(--NAV--LINK-COLOR);
       font-size: 18px;
@@ -268,16 +251,13 @@
     }
   
     .container {
-      width: 95%;
-      /* margin: 40px auto 0px auto; */
+      width: 100%;
       display: grid;
       grid-template-columns: 100%;
     }
   
     #portfolio {
       width: 100%;
-      /* display: flex; */
-      /* flex-direction: column; */
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 200px 200px 200px 200px 200px;
@@ -289,18 +269,10 @@
         "p4";
     }
     .page-section {
-      border-right: 0;
+      border-right: none;
       border-bottom: 4px solid var(--SECTION-BORDER);
+    }
     
-    }
-    h2 {
-      text-align: center;
-    }
-  
-    #portfolio img {
-      height: 190px;
-    }
-  
     ul.bottomNav {
       padding: 0px;
       flex-direction: column;
