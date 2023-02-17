@@ -1,24 +1,24 @@
 /* || VARIABLES */
 :root {
-    /* COLORS - Coffeehouse theme*/
-    --HEADER-BGCOLOR: #1A120B;
-    --HEADER-H1-BGCOLOR: #A27B5C;
+    /* COLORS - Coffee House theme*/
+    --HEADER-BGCOLOR: #F8ECD1;
+    --HEADER-LINK-COLOR: #3c2a21;
 
-    --NAV--LINK-COLOR: #F8ECD1;
-    --NAV--LINK-BORDER-BOTTOM: #F8ECD1;
-    --NAV--LINK-HOVER: #A27B5C;
+    --NAV--LINK-COLOR: #3c2a21;
+    --NAV--LINK-BORDER-BOTTOM: #3c2a21;
+    --NAV--LINK-HOVER: #F8ECD1;
   
     --HERO-H2-BGCOLOR: #F8ECD1;
-    --HERO-H2-COLOR: #31343d;
+    --HERO-H2-COLOR: #3c2a21;
 
     --SECTION-H2-COLOR: #3c2a21;
-    --SECTION-BORDER: #1A120B;
+    --SECTION-BORDER: #3c2a21;
   
-    --PORTFOLIO-LINK-COLOR: #31343d;
-    --IMAGE-BORDER: #1A120B;
+    --PORTFOLIO-LINK-COLOR: #3c2a21;
+    --IMAGE-BORDER: #3c2a21;
     --FIGURE-CAPTION: #F8ECD1;
   
-    --BOTTOM-LINK-COLOR: #1A120B;
+    --BOTTOM-LINK-COLOR: #3c2a21;
     --BOTTOM-LINK-HOVER: #F8ECD1; 
   
     /* FONTS */
@@ -81,14 +81,14 @@
   
   /* changed the color and shadow on hover for topNav */
   .topNav a:hover {
-    -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 1rem rgb(0, 0, 0);
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
     background-color: var(--NAV--LINK-HOVER);
   }
   
   /* changed the color and shadow on hover for bottomNav   */
   .bottomNav a:hover {
-    -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 1rem rgb(0, 0, 0);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
     background-color: var(--BOTTOM-LINK-HOVER);
   }
@@ -112,7 +112,7 @@
   }
   
   .profile {
-    width: 10%;
+    width: 20%;
     border: 5px solid var(--IMAGE-BORDER);
     float: right;
     margin: 0 0 0 10px;
@@ -163,7 +163,7 @@
   #portfolio img {
     object-fit: cover;
     width: 100%;
-    filter: sepia(100%);
+    filter: sepia(30%);
     opacity: 20%;
   }
   
@@ -193,8 +193,8 @@
     color: var(--BOTTOM-LINK-COLOR);
     display: inline-block;
     font-size: 24px;
-    margin-left: 10px;
-    padding: 5px;
+    margin: 20 20 20 20;
+    padding: 1px;
   }
   
 /* Media Queries */
@@ -264,10 +264,7 @@
       border-right: 0;
       border-bottom: 4px solid var(--SECTION-BORDER);
     }
-    h2 {
-      text-align: center;
-    }
-  
+    
     #portfolio img {
       height: 190px;
     }
