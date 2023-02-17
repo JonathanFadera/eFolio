@@ -92,7 +92,7 @@
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
     background-color: var(--BOTTOM-LINK-HOVER);
   }
-  /* Main container as grid makes two columns*/
+  /* Use main container as grid to make two columns*/
   .container {
     width: 90%;
     padding-bottom: 120px;
@@ -119,7 +119,7 @@
   
   }
   
-  /* Second grid - portfolio grid for work section  */
+  /* portfolio grid for work section */
   #portfolio {
     width: 100%;
     display: grid;
@@ -198,6 +198,7 @@
   }
   
 /* Media Queries */
+/* Media queries allow you to apply CSS styles depending on a device's general type  or other characteristics such as screen resolution or browser viewport width. */
 
   @media screen and (max-width: 900px) {
     body 
