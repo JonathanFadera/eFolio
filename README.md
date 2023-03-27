@@ -13,7 +13,7 @@ With these points in mind, I am setting myself up for future success by applying
 
 ## Usage
 
-![alt text](assets/images/Screenshot-new.png)
+![alt text](./assets/images/updated-ss-portfolio.png)
 
 ## Deployed Application Link
 
