@@ -31,6 +31,4 @@ https://flexboxfroggy.com/ : site for flexbox
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption : site for figure caption
 
-https://github.com/apyosi : repurposed some codes ; inspired by the opacity hovering framework
-
 https://www.freecodecamp.org/news/how-to-open-a-link-in-a-new-tab/ : how to open a link in a new tab
